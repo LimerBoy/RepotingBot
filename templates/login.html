@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link
+            rel="stylesheet"
+            crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC">
+    </head>
+    <body>
+        {% if failed %}
+        <div class="alert alert-danger" role="alert">
+            Login failed. Invalid username or password
+        </div>
+        {% endif %}
+        <div class="card shadow m-5 p-1">
+            <div class="card-body align-bottom">
+                <h1 class="text-center m-4">Please sign in</h1>
+                <form class="container" method="POST">
+                    <div class="mb-3">
+                        <label for="usernameInput" class="form-label">Your username</label>
+                        <input autofocus type="text" class="form-control" name="accountUsername" id="usernameInput" placeholder="Username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="passwordInput" class="form-label">Your password</label>
+                        <input type="password" class="form-control" name="accountPassword" id="passwordInput" placeholder="Password">
+                    </div>
+                    <div class="mb-3 d-grid gap-2">
+                        <button type="submit" class="btn btn-lg btn-primary">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

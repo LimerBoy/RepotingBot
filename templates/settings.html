@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Settings</title>
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Navbar Block -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">ReportingBot</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="settings">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="https://t.me/imperator_vladimir">Developer</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a class="nav-link" href="logout">Log out</a>
+                </span>
+            </div>
+        </nav>
+        <!-- Settings -->
+        <div class="card shadow m-5 p-1">
+            <div class="card-body align-bottom">
+                <form class="container" method="POST" autocomplete="off">
+                    <div class="mb-3">
+                        <label for="passwordInput" class="form-label">Your account password</label>
+                        <input type="password" class="form-control" value="" name="accountPassword" id="passwordInput" placeholder="Enter new password">
+                    </div>
+                    <div class="mb-3 d-grid gap-2">
+                        <button type="submit" class="btn btn-lg btn-outline-primary">Save settings</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
